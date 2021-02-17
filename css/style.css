@@ -450,6 +450,9 @@ body {
     overflow: hidden;
     max-width: 100%;
   }
+  .decor-text{
+    left: 30px;
+  }
 }
 
 @media screen and (max-width: 1366px) {
@@ -465,6 +468,9 @@ body {
   .hero-block__text {
     font-size: 46px;
     line-height: 60px;
+  }
+  .decor-text{
+    font-size: 150px;
   }
 }
 
@@ -490,6 +496,9 @@ body {
   }
   .hero-block__tab {
     margin-top: 80px;
+  }
+  .decor-text{
+    font-size: 120px;
   }
 }
 
@@ -687,6 +696,11 @@ body {
     margin-top: 79.27px;
   }
 }
+@media screen and (max-width: 800px) {
+  .decor-text{
+    font-size: 100px;
+  }
+}
 
 @media screen and (max-width: 550px) {
   .slider-dots,
@@ -700,6 +714,9 @@ body {
     width: -moz-fit-content;
     width: fit-content;
     margin: 30px auto 0px;
+  }
+  .decor-text{
+    font-size: 70px;
   }
 }
 
