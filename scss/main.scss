@@ -1,0 +1,144 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.container {
+    max-width: 1540px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wrapper {
+    max-width: 1540px;
+    width: 100%;
+    margin: 0 auto;
+    border-right: 1px solid #F1F1F1;
+    border-left: 1px solid #F1F1F1;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400px;
+    font-size: 18px;
+    position: relative;
+}
+
+.decor-block {
+    .container {
+        position: relative;
+    }
+}
+
+.decor-text {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 191px;
+    line-height: 191px;
+    letter-spacing: 0.1em;
+    color: #F1F1F1;
+    position: absolute;
+    left: -10px;
+    z-index: -1;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.decor-line {
+    height: 100%;
+    width: 1px;
+    background-color: #F1F1F1;
+    position: absolute;
+    z-index: -1;
+    left: 256.5px;
+
+    &:nth-child(2) {
+        left: 513px;
+    }
+
+    &:nth-child(3) {
+        left: 771.5px;
+    }
+
+    &:nth-child(4) {
+        right: 510px;
+        left: initial;
+    }
+
+    &:nth-child(5) {
+        right: 253.5px;
+        left: initial;
+    }
+}
+
+
+
+.slider-dots,
+.slider-dots2,
+.slider-dots3,
+.slider-dots4,
+.slider-dots5,
+.slider-dots6,
+.slider-dots7А {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 245.5px;
+    button {
+        width: 12px;
+        height: 12px;
+        position: relative;
+        background-color: transparent;
+        border: 1px solid #C4C4C4;
+        opacity: 1;
+        transition: all .5s;
+        border-radius: 50%;
+        padding: 0px;
+        outline: none;
+        cursor: pointer;
+
+        &:hover {
+            border-color: #B31DB6;
+            
+        }
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    button.tns-nav-active {
+        position: relative;
+        &::after {
+            position: absolute;
+            content: '';
+            background-color: #C4C4C4;
+            border-radius: 50%;
+            width: 4px;
+            height: 4px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    button + button{
+        margin-left: 25px;
+    }
+}
+
+.tns-outer {
+    max-width: 702px;
+    width: 100%;
+    padding-bottom: 29px;
+}
+

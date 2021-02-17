@@ -1,0 +1,391 @@
+@media screen and (max-width: 1540px) {
+    .container {
+        padding: 0px 40px;
+    }
+
+    .wrapper {
+        overflow: hidden;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .hero-block {
+        &__tab {
+            max-width: 930px;
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .hero-block {
+        &__tab {
+            max-width: 930px;
+        }
+
+        &__text {
+            font-size: 46px;
+            line-height: 60px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 1180px) {
+    .hero-block {
+        &__inner {
+            flex-direction: column;
+        }
+
+        &__text {
+            max-width: 425px;
+        }
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .hero-block {
+        margin-top: 80px;
+        padding-bottom: 80px;
+
+        &__tabs-content {
+            p {
+                padding-right: 65px;
+            }
+        }
+
+        &__tab {
+            margin-top: 80px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 840px) {
+
+    .container {
+        padding: 0px 20px;
+    }
+
+    .hero-block {
+        &__tab {
+            flex-direction: column;
+
+            ul {
+                li {
+                    text-align: start;
+                }
+            }
+        }
+
+        .ui-tabs .ui-tabs-nav li.ui-tabs-active a {
+
+
+            &::after {
+                top: initial;
+                bottom: 0px;
+                width: 100%;
+                height: 4px;
+                background: linear-gradient(158.11deg, rgba(46, 199, 61, 0.5) 28.66%, rgba(124, 100, 194, 0.5) 63.77%, rgba(179, 29, 182, 0.5) 95.01%);
+
+            }
+
+        }
+
+
+
+        &__tabs {
+            margin-left: 0px;
+        }
+
+        &__tab {
+            ul {
+                // &:first-child {
+                //     display: none;
+                // }
+            }
+        }
+
+        &__select {
+            display: none;
+        }
+
+        &__tabs {
+            display: none;
+        }
+
+        &__tab-hide {
+            display: block;
+        }
+
+        &__select-hide {
+            display: block;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 22px;
+            line-height: 18px;
+            text-align: right;
+            letter-spacing: 0.03em;
+            color: #000000;
+            padding: 13px 23.5px 13px 23.5px;
+            border: none;
+            outline: none;
+            position: relative;
+
+
+            option {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 22px;
+                line-height: 18px;
+                text-align: right;
+                letter-spacing: 0.03em;
+                color: #858A8A;
+                border: none;
+
+                &:first-child {
+                    // color: transparent;
+                    background-clip: text;
+                    background-image: linear-gradient(141.56deg, #2EC73D 14.65%, #7C64C2 47.8%, #B31DB6 77.28%);
+                }
+            }
+        }
+
+        &__after {
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 4px;
+                bottom: 0px;
+                left: 0px;
+                background: linear-gradient(158.11deg, rgba(46, 199, 61, 0.5) 28.66%, rgba(124, 100, 194, 0.5) 63.77%, rgba(179, 29, 182, 0.5) 95.01%);
+            }
+        }
+
+        .tab {
+            // display: none;
+            display: block;
+        }
+
+        .tabs {
+            max-height: 52px;
+            overflow: hidden;
+            position: relative;
+            filter: drop-shadow(0px 3px 14px rgba(0, 0, 0, 0.11));
+            box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.07);
+            position: absolute;
+            width: 100%;
+            z-index: 2;
+            background-color: white;
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 4px;
+                bottom: 0px;
+                left: 0px;
+                background: linear-gradient(158.11deg, rgba(46, 199, 61, 0.5) 28.66%, rgba(124, 100, 194, 0.5) 63.77%, rgba(179, 29, 182, 0.5) 95.01%);
+            }
+
+            &.active {
+                max-height: 100%;
+
+                &::after {
+                    display: none;
+                }
+
+                li {
+                    &::before {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+
+            li {
+                font-weight: 900;
+                font-size: 22px;
+                line-height: 18px;
+                letter-spacing: 0.03em;
+                color: #000000;
+                position: relative;
+                max-height: 52px;
+
+                &:first-child {
+
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 4px;
+                        bottom: 0px;
+                        left: 0px;
+                        background: linear-gradient(158.11deg, rgba(46, 199, 61, 0.5) 28.66%, rgba(124, 100, 194, 0.5) 63.77%, rgba(179, 29, 182, 0.5) 95.01%);
+                    }
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        background-image: url(../images/arrow.svg);
+                        width: 22px;
+                        background-repeat: no-repeat;
+                        height: 13.34px;
+                        top: 15px;
+                        right: 25px;
+                    }
+                }
+
+                &:nth-child(2) {
+                    color: transparent;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    background-image: linear-gradient(121.82deg, rgba(46, 199, 61, 0.8) 20.37%, rgba(124, 100, 194, 0.8) 56.03%, rgba(179, 29, 182, 0.8) 86.17%),
+                        linear-gradient(0deg, #FFFFFF, #FFFFFF);
+                }
+
+
+            }
+        }
+
+        .tab.active {
+            display: block;
+        }
+
+        &__tabs-text {
+            p {
+                font-size: 18px;
+                line-height: 26px;
+                letter-spacing: 0.02em;
+                color: #1D1D1D;
+            }
+
+            p+p {
+                margin-top: 18px;
+            }
+        }
+
+        &__tab-hide {
+            margin-top: 33.27px;
+        }
+
+
+    }
+
+    .header {
+        &__menu {
+            display: none;
+        }
+
+        &__burger {
+            display: block;
+        }
+    }
+
+    .decor-line {
+        left: 20px;
+    }
+
+    .decor-line:nth-child(2) {
+        left: 87px;
+    }
+
+    .decor-line:nth-child(3) {
+        left: 154px;
+    }
+
+    .decor-line:nth-child(4) {
+        right: 154px;
+    }
+
+    .decor-line:nth-child(5) {
+        right: 87px;
+    }
+
+    .decor-line:nth-child(6) {
+        right: 20px;
+    }
+
+    .tab_content {
+        margin-top: 79.27px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .slider-dots,
+    .slider-dots2,
+    .slider-dots3,
+    .slider-dots4,
+    .slider-dots5,
+    .slider-dots6,
+    .slider-dots7 {
+        width: fit-content;
+        margin: 30px auto 0px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header {
+        padding: 15px 0px;
+        margin-bottom: 0px;
+
+        .container {
+            align-items: center;
+        }
+    }
+
+    .hero-block {
+        margin-top: 30px;
+        padding-bottom: 40px;
+
+        &__text {
+            font-size: 27px;
+            line-height: 34px;
+        }
+
+        &__tab {
+            margin-top: 22.27px;
+        }
+
+        &__tab-hide {
+            margin-top: 33.27px;
+        }
+
+        &__slider-item {
+            margin-top: 43px;
+            height: 196px;
+            width: 100%;
+        }
+
+        &__tab {
+            ul {
+                li {
+                    padding: 13px 23.5px 17px 23.5px;
+                }
+            }
+        }
+
+        .tabs {
+            li {
+                &:first-child {
+                    &::after {
+                        bottom: -4px;
+                    }
+                }
+            }
+        }
+    }
+
+    .decor-text {
+        font-size: 50px;
+        line-height: 50px;
+        left: 20px;
+    }
+
+}
