@@ -90,7 +90,7 @@ body {
 .slider-dots4,
 .slider-dots5,
 .slider-dots6,
-.slider-dots7А {
+.slider-dots7 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,7 +104,7 @@ body {
 .slider-dots4 button,
 .slider-dots5 button,
 .slider-dots6 button,
-.slider-dots7А button {
+.slider-dots7 button {
   width: 12px;
   height: 12px;
   position: relative;
@@ -126,7 +126,7 @@ body {
 .slider-dots4 button:hover,
 .slider-dots5 button:hover,
 .slider-dots6 button:hover,
-.slider-dots7А button:hover {
+.slider-dots7 button:hover {
   border-color: #B31DB6;
 }
 
@@ -136,7 +136,7 @@ body {
 .slider-dots4 button:first-child,
 .slider-dots5 button:first-child,
 .slider-dots6 button:first-child,
-.slider-dots7А button:first-child {
+.slider-dots7 button:first-child {
   margin-left: 0;
 }
 
@@ -146,7 +146,7 @@ body {
 .slider-dots4 button:last-child,
 .slider-dots5 button:last-child,
 .slider-dots6 button:last-child,
-.slider-dots7А button:last-child {
+.slider-dots7 button:last-child {
   margin-right: 0;
 }
 
@@ -156,7 +156,7 @@ body {
 .slider-dots4 button.tns-nav-active,
 .slider-dots5 button.tns-nav-active,
 .slider-dots6 button.tns-nav-active,
-.slider-dots7А button.tns-nav-active {
+.slider-dots7 button.tns-nav-active {
   position: relative;
 }
 
@@ -166,7 +166,7 @@ body {
 .slider-dots4 button.tns-nav-active::after,
 .slider-dots5 button.tns-nav-active::after,
 .slider-dots6 button.tns-nav-active::after,
-.slider-dots7А button.tns-nav-active::after {
+.slider-dots7 button.tns-nav-active::after {
   position: absolute;
   content: '';
   background-color: #C4C4C4;
@@ -186,7 +186,7 @@ body {
 .slider-dots4 button + button,
 .slider-dots5 button + button,
 .slider-dots6 button + button,
-.slider-dots7А button + button {
+.slider-dots7 button + button {
   margin-left: 25px;
 }
 
